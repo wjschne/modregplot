@@ -35,9 +35,6 @@ a ggplot of the simple slopes
 generates simple slopes plot from moderated regression equation
 }
 \examples{
-\dontrun{
-if(interactive()){
- #EXAMPLE1
 modregplot(
   predictor_range = c(-2, 2),
   moderator_values = c(Low = -1, High = 1),
@@ -49,6 +46,4 @@ modregplot(
   criterion_label = "Aggression",
   moderator_label = "Impulsivity"
 )
- }
-}
 }
