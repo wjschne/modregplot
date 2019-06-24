@@ -15,10 +15,12 @@ that have no accompanying plots.
 
 ## Installation
 
-You can install the released version of modregplot from
+You can install the latest version of modregplot from
 [github](https://github.com) with:
 
 ``` r
+# if the remotes package is not installed, run
+# install.packages("remotes")
 remotes::install_github("wjschne/modregplot")
 ```
 
@@ -26,7 +28,8 @@ remotes::install_github("wjschne/modregplot")
 
 Suppose you see a moderated regression result:
 
-\(Aggression=5.5+2.1Psychopathy+0.5Impulsivity+1.2Psychopathy\cdot Impulsvity\)
+Aggression = 6 + 2 \* Psychopathy + 1 \* Impulsivity + 1 \* Psychopathy
+\* Impulsvity
 
 What will this result look like? Suppose that a high value of
 impulsivity is 1 and a low value is -1.
@@ -37,10 +40,10 @@ library(modregplot)
 modregplot(
   predictor_range = c(-2, 2),
   moderator_values = c(Low = -1, High = 1),
-  intercept = 5.5,
-  predictor_coef = 2.1,
-  moderator_coef = 0.5,
-  interaction_coef = 1.2,
+  intercept = 6,
+  predictor_coef = 2,
+  moderator_coef = 1,
+  interaction_coef = 1,
   predictor_label = "Psychopathy",
   criterion_label = "Aggression",
   moderator_label = "Impulsivity"
