@@ -1,0 +1,22 @@
+Package: modregplot
+Title: Creates simple slopes plot from a regression equation
+Version: 0.0.1
+Authors@R: 
+    person(given = "W. Joel",
+           family = "Schneider",
+           role = c("aut", "cre"),
+           email = "w.joel.schneider@gmail.com")
+Description: You supply the details of the regression equation with an interaction term and a plot of the slope slopes is displayed.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    ggplot2,
+    dplyr,
+    tidyr,
+    tibble,
+    rlang (>= 0.1.2)
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Suggests: 
+    roxygen2
